@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #eef5ff;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,11 +9,11 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-color: #dc3545;
+    background-color: #0077b6;
     color: #fff;
     text-align: center;
     padding: 100px 20px;
-    border-bottom: 5px solid #c82333;
+    border-bottom: 5px solid #023e8a;
     margin-bottom: 50px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -44,7 +44,7 @@ body {
 /* Section Title */
 .section-title {
     font-size: 2.5rem;
-    color: #dc3545;
+    color: #0077b6;
     font-weight: bold;
     margin-bottom: 40px;
     text-align: center;
@@ -67,7 +67,7 @@ body {
 
 .content-section h4 {
     font-size: 1.3rem;
-    color: #343a40;
+    color: #023e8a;
     margin-bottom: 15px;
 }
 
@@ -80,14 +80,14 @@ body {
 /* Intro Section */
 .intro-section {
     padding: 50px 15px;
-    background-color: #f8f9fa;
+    background-color: #caf0f8;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .intro-section h4 {
     font-size: 1.2rem;
-    color: #dc3545;
+    color: #0077b6;
     font-weight: bold;
     text-align: center;
 }
@@ -99,100 +99,78 @@ body {
 
 /* Responsive Layout */
 @media (max-width: 1200px) {
-    /* Écrans moyens */
     .hero-section h1 {
         font-size: 2.4rem;
     }
-
     .hero-section p {
         font-size: 1.1rem;
     }
-
     .section-title {
         font-size: 2.2rem;
     }
-
     .content-section {
         padding: 25px;
     }
 }
 
 @media (max-width: 991px) {
-    /* Tablettes et grands écrans */
     .navbar-toggler {
         display: block;
     }
-
     .intro-section {
         padding: 30px 10px;
     }
-
     .content-section {
         padding: 20px;
     }
-
     .hero-section h1 {
         font-size: 2rem;
     }
-
     .hero-section p {
         font-size: 1rem;
     }
-
     .section-title {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 768px) {
-    /* Smartphones et petits écrans */
     .hero-section {
         padding: 80px 20px;
     }
-
     .hero-section h1 {
         font-size: 1.8rem;
     }
-
     .hero-section p {
         font-size: 0.95rem;
     }
-
     .content-section {
         padding: 20px;
     }
-
     .section-title {
         font-size: 1.8rem;
     }
-
     .intro-section h4 {
         font-size: 1.1rem;
     }
-
     .intro-section p {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
-    /* Écrans très petits (ex : téléphones) */
     .hero-section h1 {
         font-size: 1.6rem;
     }
-
     .hero-section p {
         font-size: 0.9rem;
     }
-
     .section-title {
         font-size: 1.5rem;
     }
-
     .content-section h4 {
         font-size: 1.2rem;
     }
-
     .content-section p {
         font-size: 0.9rem;
     }

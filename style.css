@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    background: linear-gradient(to right, #8e44ad, #ff7675);
     color: white;
     margin: 0;
     padding: 0;
@@ -69,24 +69,24 @@ p {
 
 /* Bouton collégien */
 .college {
-    background-color: #3498db;
-    border-color: #3498db;
+    background-color: #2a9d8f;
+    border-color: #2a9d8f;
 }
 
 .college:hover {
     background-color: white;
-    color: #3498db;
+    color: #2a9d8f;
 }
 
 /* Bouton lycéen */
 .lycee {
-    background-color: #e74c3c;
-    border-color: #e74c3c;
+    background-color: #0077b6;
+    border-color: #0077b6;
 }
 
 .lycee:hover {
     background-color: white;
-    color: #e74c3c;
+    color: #0077b6;
 }
 
 /* Responsive design */

@@ -14,4 +14,4 @@ fetch('https://kyliancourel.github.io/AulaHispanica/lycee/pages/footer.html') //
     linkElement.href = 'https://kyliancourel.github.io/AulaHispanica/lycee/styles/footer.css'; // Chemin du fichier CSS
     document.head.appendChild(linkElement);
   })
-  .catch(error => console.error('Erreur lors du chargement de la navbar :', error));
+  .catch(error => console.error('Erreur lors du chargement du footer :', error));

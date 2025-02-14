@@ -6,7 +6,7 @@ fetch('https://kyliancourel.github.io/AulaHispanica/lycee/pages/footer.html') //
   })
   .then(data => {
     // Insérer le contenu de la navbar dans le conteneur
-    document.getElementById('navbar-container').innerHTML = data;
+    document.getElementById('footer-container').innerHTML = data;
 
     // Ajouter dynamiquement la feuille de style navbar.css
     const linkElement = document.createElement('link');

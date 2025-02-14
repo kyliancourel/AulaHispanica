@@ -79,7 +79,7 @@ body {
 
 /* Intro Section */
 .intro-section {
-    padding: 50px 15px;
+    padding: 50px 15px 50px;
     background-color: #caf0f8;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);

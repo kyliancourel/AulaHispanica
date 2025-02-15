@@ -1,0 +1,155 @@
+/* footer.css */
+footer {
+    background-color: #1e2a47; /* Bleu sombre */
+    color: #ffffff; /* Texte blanc */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #f4a261; /* Couleur orange */
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: #ffffff; /* Lien blanc */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #f4a261; /* Couleur orange au survol */
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links i {
+    font-size: 1.5rem; /* Taille des icônes */
+    color: #ffffff; /* Couleur des icônes */
+    transition: color 0.3s ease;
+}
+
+.social-links i:hover {
+    color: #f4a261; /* Couleur orange au survol */
+}
+
+.social-links a {
+    color: #ffffff; /* Lien social blanc */
+    text-decoration: none;
+}
+
+.social-links a:hover i {
+    color: #f4a261; /* Orange au survol */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #bbbbbb; /* Texte gris clair */
+}
+
+/* Responsiveness */
+/* Modifier l'affichage du footer pour qu'il soit en une seule colonne sur les petits écrans */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-section h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+/* Pour les écrans plus larges, retour à la disposition en grille */
+@media (min-width: 769px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+
+    .footer-section h5 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Responsivité des liens sociaux */
+.footer-section.social a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Pour les icônes sociales, ajouter un effet au survol */
+.social-links li a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links li a:hover {
+    transform: scale(1.2); /* Agrandir légèrement l'icône au survol */
+}

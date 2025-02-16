@@ -1,4 +1,3 @@
-/* footer.css */
 footer {
     background-color: #1e2a47; /* Bleu sombre */
     color: #ffffff; /* Texte blanc */
@@ -8,24 +7,38 @@ footer {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Alignement des titres sur une seule ligne */
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f4a261; /* Couleur orange */
+    margin-bottom: 15px;
+}
+
+.footer-header h5 {
+    flex: 1;
+    text-align: center;
+}
+
+/* Organisation des colonnes */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 30px;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .footer-section {
     flex: 1;
     min-width: 250px;
-}
-
-.footer-section h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #f4a261; /* Couleur orange */
 }
 
 .footer-section ul {
@@ -47,36 +60,6 @@ footer {
     color: #f4a261; /* Couleur orange au survol */
 }
 
-.social-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.social-links li {
-    margin: 0 10px;
-}
-
-.social-links i {
-    font-size: 1.5rem; /* Taille des icônes */
-    color: #ffffff; /* Couleur des icônes */
-    transition: color 0.3s ease;
-}
-
-.social-links i:hover {
-    color: #f4a261; /* Couleur orange au survol */
-}
-
-.social-links a {
-    color: #ffffff; /* Lien social blanc */
-    text-decoration: none;
-}
-
-.social-links a:hover i {
-    color: #f4a261; /* Orange au survol */
-}
-
 footer p {
     margin-top: 20px;
     font-size: 0.9rem;
@@ -84,72 +67,18 @@ footer p {
 }
 
 /* Responsiveness */
-/* Modifier l'affichage du footer pour qu'il soit en une seule colonne sur les petits écrans */
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-}
+@media (max-width: 768px) {
+    .footer-header {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.footer-section {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.footer-section h5 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-/* Pour les écrans plus larges, retour à la disposition en grille */
-@media (min-width: 769px) {
-    .footer-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 
     .footer-section {
-        text-align: left;
+        margin-bottom: 20px;
     }
-
-    .footer-section h5 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .footer-section ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .footer-section ul li {
-        margin: 5px 0;
-    }
-}
-
-/* Responsivité des liens sociaux */
-.footer-section.social a {
-    display: block;
-    margin-bottom: 5px;
-}
-
-/* Pour les icônes sociales, ajouter un effet au survol */
-.social-links li a {
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.social-links li a:hover {
-    transform: scale(1.2); /* Agrandir légèrement l'icône au survol */
 }

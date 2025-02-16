@@ -24,7 +24,7 @@ footer {
 
 .footer-header h5 {
     flex: 1;
-    text-align: center;
+    text-align: left;
 }
 
 /* Organisation des colonnes */
